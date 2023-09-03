@@ -2,7 +2,7 @@ describe("API testing with Alias", () => {
 
     beforeEach(() => {
         // 'users' is an alias
-        cy.request('GET', "https://reqres.in/api/users?page=2").as('users')
+        cy.api('GET', "https://reqres.in/api/users?page=2").as('users')
 
     })
 
@@ -22,7 +22,7 @@ describe("API testing with Alias", () => {
     it('Validate user info in data json array', () => {
         cy.get('@users')
             .its('body').then((res) => {
-                expect(res.data[0]).has.property('first name', "Michael")
+                expect(res.data[1]).has.property('first_name', "Lindsay")
             })
     });
 })

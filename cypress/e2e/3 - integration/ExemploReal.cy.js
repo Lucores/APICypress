@@ -8,7 +8,7 @@ describe('APIs Testing', () => {
             required: ['id', 'product', 'price'],
             properties: {
               id: {
-                type: 'number',
+                type: 'string',
                 minimum: 1,
               },
               product: {
@@ -135,7 +135,6 @@ describe('APIs Testing', () => {
           cy.log(JSON.stringify(res))
           expect(res.status).to.eq(201)
           expect(res.body.data).has.property('email', testEmail)
-       //   }).then((res) => {
             const userId = res.body.data.id
            cy.request({
               method: 'GET',

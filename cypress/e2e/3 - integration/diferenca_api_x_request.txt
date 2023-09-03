@@ -1,0 +1,12 @@
+Instalação
+npm i cypress-plugin-api
+
+e importar o plugin dentro do cypress/support/e2e.js 
+
+import 'cypress-plugin-api'
+// oou
+require('cypress-plugin-api')
+Usage
+
+
+Agora o cy.api funciona exatamente que nem o cy.request

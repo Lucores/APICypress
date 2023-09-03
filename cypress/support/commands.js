@@ -23,3 +23,19 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('getCep01001000', () => {
+    cy.api({
+        method: 'GET',
+        url: 'https://viacep.com.br/ws/01001000/json/',
+    })
+});
+
+Cypress.Commands.add('getAPI', (urlParam) => {
+    cy.request({
+        method: 'GET',
+        url: urlParam,
+        headers: {
+            Authorization: 'Bearer f2a86568d1a89996c1c3e61d89575765c8e652f85eda7f3476d4dc969ec1e32a'
+        }
+    })
+})

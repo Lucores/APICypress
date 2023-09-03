@@ -19,3 +19,4 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 chai.use(require('chai-json-schema'));
+require('cypress-plugin-api');

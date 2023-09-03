@@ -1,0 +1,83 @@
+{
+  "code": 200,
+  "meta": {
+    "pagination": {
+      "total": 2766,
+      "pages": 277,
+      "page": 1,
+      "limit": 10
+    }
+  },
+  "data": [
+    {
+      "id": 4809509,
+      "name": "Usinggggg fixtures to represent data",
+      "email": "sJDCjFdsGJ@gmail.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 4809508,
+      "name": "Using fixtures to represent data",
+      "email": "fjFhHfddJF@gmail.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 4809507,
+      "name": "Tenali Ramakrishna",
+      "email": "hHhhEkhFsj@gmail.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 4803278,
+      "name": "Alan Voigt",
+      "email": "fgfdgdfgdfgdfgfgffdsdfgsfgfdfsddsadf@cypress.io",
+      "gender": "male",
+      "status": "inactive"
+    },
+    {
+      "id": 4639288,
+      "name": "Dayaanandabbbbbbbbb Reddy",
+      "email": "reddy_dayaananda@white-smith.example",
+      "gender": "male",
+      "status": "inactive"
+    },
+    {
+      "id": 4606787,
+      "name": "Gopi Khatri",
+      "email": "khatri_gopi@oconnell.test",
+      "gender": "female",
+      "status": "active"
+    },
+    {
+      "id": 4606786,
+      "name": "Aadi Pillai LLD",
+      "email": "lld_pillai_aadi@lynch-dare.test",
+      "gender": "male",
+      "status": "inactive"
+    },
+    {
+      "id": 4606785,
+      "name": "Aaryan Kaur",
+      "email": "aaryan_kaur@batz.example",
+      "gender": "male",
+      "status": "inactive"
+    },
+    {
+      "id": 4606784,
+      "name": "Kanchan Gandhi",
+      "email": "kanchan_gandhi@glover.example",
+      "gender": "male",
+      "status": "inactive"
+    },
+    {
+      "id": 4606780,
+      "name": "Chaaruchandra Ahluwalia",
+      "email": "chaaruchandra_ahluwalia@koch.test",
+      "gender": "female",
+      "status": "inactive"
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 it('JSON schema validator', () => {
     const schema = {
-      title: 'Test Schema v1',
+      title: 'Test Schema v2',
       type: 'object',
       required: ['postId', 'id', 'name', 'email'],
       properties: {
         postId: {
           type: 'number',
-          minimum: 1,
+          minimum: 5,
         },
         id: {
           type: 'number',
@@ -25,21 +25,21 @@ it('JSON schema validator', () => {
     };
     const expectedValue = [
       {
-        postId: 1,
+        postId: 3,
         id: 1,
-        name: 'id labore ex et quam laborum',
-        email: 'Eliseo@gardner.biz',
-        body: 'laudantium',
+        name: 'tesfsdfdsfdsfsdf',
+        email: 'alanvoigt@yahoo.com.br',
+        body: 'tesfsdfdsfdsfsdf',
       },
       {
-        postId: 1,
+        postId: 5,
         id: 2,
-        name: 'quo vero reiciendis velit similique earum',
-        email: 'Jayne_Kuhic@sydney.com',
-        body: 'est natus ',
+        name: 'tesfsdfdsfdsfsdf',
+        email: 'alanvoigt@yahoo.com.br',
+        body: 'tesfsdfdsfdsfsdf',
       },
     ];
-  
-    console.log(expectedValue.length);
+
     expect(expectedValue[0]).to.be.jsonSchema(schema);
+    expect(expectedValue[1]).to.be.jsonSchema(schema);
   });

@@ -18,14 +18,14 @@ it('create user with fixture another option', () => {
       body: {
         "name": 'Alan',
         "gender": 'Male',
-        "email": 'alanvoigt3@yahoo.com.br', 
+        "email": 'alanvoigt5@yahoo.com.br', 
         "status": 'active'
       }
 
     }).then((res)=>{
       cy.log(JSON.stringify(res))
       expect(res.status).to.eq(201)
-      expect(res.body.data).has.property('email', 'alanvoigt3@yahoo.com.br')
+      expect(res.body.data).has.property('email', 'alanvoigt5@yahoo.com.br')
    //   }).then((res) => {
         const userId = res.body.data.id
        cy.request({
