@@ -61,7 +61,7 @@ it('API KEY com postman', () => {
     method: 'GET',
     url: 'https://api.getpostman.com/collections',
     headers: {
-      'x-api-key' : "PMAK-63fbac19b267645395a5c470-5c964543ea374da4e3434eab85efdb7c1a"
+      'x-api-key' : "PMAK-<substitua pelo seu token>"
     }
   }).then((res)=>{
     cy.log(JSON.stringify(res))
@@ -74,7 +74,7 @@ it('API KEY com weatherapi Query params', () => {
     method: 'GET',
     url: 'http://api.openweathermap.org/data/2.5/weather?lat=-26.9165792&lon=-49.07173310000002',
     qs: {
-      'appid' : "3065ed778194ca488779c670cf160d22"
+      'appid' : "<substitua pelo seu token>"
     }
   }).then((res)=>{
     cy.log(JSON.stringify(res)) 
