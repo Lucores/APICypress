@@ -16,7 +16,7 @@ it('create user with fixture another option', () => {
       method: 'POST',
       url: 'https://gorest.co.in/public/v1/users',
       headers: {
-        'authorization' : "Bearer f2a86568d1a89996c1c3e61d89575765c8e652f85eda7f3476d4dc969ec1e32a"
+        'authorization' : "Bearer <substitua pelo seu token>"
       },
       body: {
         "name": 'Alan',
